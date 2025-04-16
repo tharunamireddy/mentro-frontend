@@ -12,7 +12,7 @@ function ChatList() {
     const fetchConversations = async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/chat/list',
+          'https://mentor-backend-lta0.onrender.com/api/chat/list',
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
         setConversations(data);
