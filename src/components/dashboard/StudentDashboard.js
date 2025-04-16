@@ -13,7 +13,7 @@ function StudentDashboard() {
     const fetchFaculties = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/faculty/all?subject=${search}&counseling=${counseling}`,
+          `https://mentor-backend-lta0.onrender.com/api/faculty/all?subject=${search}&counseling=${counseling}`,
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
         setFacultyList(data);
