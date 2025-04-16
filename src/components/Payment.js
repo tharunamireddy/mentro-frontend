@@ -23,7 +23,7 @@ function CheckoutForm({ bookingId, amount, bookingStatus }) {
     const createPaymentIntent = async () => {
       try {
         const { data } = await axios.post(
-          'http://localhost:5000/api/payment/create-payment-intent',
+          'https://mentor-backend-lta0.onrender.com/api/payment/create-payment-intent',
           { bookingId },
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
