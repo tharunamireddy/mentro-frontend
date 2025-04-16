@@ -8,7 +8,7 @@ function FacultyProfile() {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/faculty/profile', {
+        const { data } = await axios.get('https://mentor-backend-lta0.onrender.com/api/faculty/profile', {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
         setProfile(data);
