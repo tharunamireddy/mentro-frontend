@@ -13,7 +13,7 @@ function Signup() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:5000/api/auth/signup', {
+      const { data } = await axios.post('https://mentor-backend-lta0.onrender.com/api/auth/signup', {
         name,
         email,
         password,
