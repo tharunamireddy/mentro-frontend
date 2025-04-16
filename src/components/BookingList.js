@@ -11,7 +11,7 @@ function BookingList() {
     (async () => {
       try {
         const { data } = await axios.get(
-          'http://localhost:5000/api/booking/mybookings',
+          'https://mentor-backend-lta0.onrender.com/api/booking/mybookings',
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
         setBookings(data);
