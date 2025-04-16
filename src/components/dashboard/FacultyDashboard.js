@@ -17,7 +17,7 @@ function FacultyDashboard() {
     e.preventDefault();
     try {
       await axios.post(
-        'http://localhost:5000/api/faculty/profile',
+        'https://mentor-backend-lta0.onrender.com/api/faculty/profile',
         {
           skills: profile.skills.split(',').map((s) => s.trim()),
           subjects: profile.subjects.split(',').map((s) => s.trim()),
