@@ -19,7 +19,7 @@ function Booking() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/booking',
+        'https://mentor-backend-lta0.onrender.com/api/booking',
         {
           facultyId: faculty.user._id,
           sessionDate,
