@@ -16,7 +16,7 @@ function ChatRoom() {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/chat/${bookingId}`,
+          `https://mentor-backend-lta0.onrender.com/api/chat/${bookingId}`,
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
         setMessages(data);
